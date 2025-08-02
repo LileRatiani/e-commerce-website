@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar-left button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.navbar-left button:hover, 
+.navbar-left button.active::after{
+  text-decoration: underline;
+}
+.navbar-left button.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #3cae68;
+}
+
+
+
+.navbar-center .logo-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.currency-select {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.navbar-right{
+  display: flex;
+}
+
+.cart-button {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #5ece7b;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 3px 6px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 99;
+}
+
+.cart-overlay {
+  z-index: 100; 
+}
